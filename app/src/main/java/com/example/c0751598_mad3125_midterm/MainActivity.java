@@ -2,12 +2,21 @@ package com.example.c0751598_mad3125_midterm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    private Button btnLogin;
+    private EditText edtUserName;
+    private EditText edtPassword;
 
     @Override
 
@@ -23,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
         Users.userArray.add(u3);
         Users.userArray.add(u4);
 
-
-
         super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
 
     }
+
+    
 }

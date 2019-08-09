@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchDetailActivity">
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="137dp"-->
+        <!--android:layout_marginTop="65dp"-->
+        <!--tools:srcCompat="@tools:sample/avatars" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/imageView2"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="131dp"-->
+        <!--android:layout_marginTop="44dp"-->
+        <!--android:text="spaceX Mission Details"-->
+        <!--android:textColor="#D84E4040"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginTop="37dp"-->
+        <!--android:text="Launch Name" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/launch_Name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_marginStart="47dp"-->
+        <!--android:layout_marginTop="37dp"-->
+        <!--android:layout_toEndOf="@+id/textView4"-->
+        <!--android:text="TextView" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView6"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textView4"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="52dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:text="Launch Year" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/launch_year"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/launch_Name"-->
+        <!--android:layout_marginStart="53dp"-->
+        <!--android:layout_marginTop="26dp"-->
+        <!--android:layout_toEndOf="@+id/textView6"-->
+        <!--android:text="TextView" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView10"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textView6"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="51dp"-->
+        <!--android:layout_marginTop="27dp"-->
+        <!--android:text="Rocket Name" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/rocket_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/launch_year"-->
+        <!--android:layout_marginStart="49dp"-->
+        <!--android:layout_marginTop="27dp"-->
+        <!--android:layout_toEndOf="@+id/textView10"-->
+        <!--android:text="TextView" />-->
+
+</RelativeLayout>

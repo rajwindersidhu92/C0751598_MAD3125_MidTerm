@@ -91,26 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-
-
-
-//        if(userName.equals("a") && password.equals("pwd"))
-//        {
-//            Intent mIntent = new Intent(LoginActivity.this, HomeActivity.class);
-//            mIntent.putExtra("name", "Pritesh Patel");
-//            mIntent.putExtra("id", 100);
-
-            //Bundle mBundle = new Bundle();
-            //mBundle.putInt("id", 100);
-            //mBundle.putString("name", "Pritesh Patel");
-            //mIntent.putExtra("all", mBundle);
-
-//            startActivity(mIntent);
-            //finish();
-//        }
-
-        //Toast.makeText(getApplicationContext(),userName + " : " +  password,Toast.LENGTH_SHORT).show();
-
     }
 
 }

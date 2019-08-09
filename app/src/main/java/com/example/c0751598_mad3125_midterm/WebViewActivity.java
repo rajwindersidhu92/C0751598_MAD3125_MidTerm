@@ -33,7 +33,7 @@ public class WebViewActivity extends AppCompatActivity {
         AssetManager mAssetManager = this.getAssets();
         try
         {
-            InputStream mInputStream = mAssetManager.open("test.html");
+            InputStream mInputStream = mAssetManager.open("");
             int size = mInputStream.available();
             byte[] buffer = new byte[size];
             mInputStream.read(buffer);

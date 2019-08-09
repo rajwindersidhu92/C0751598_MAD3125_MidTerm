@@ -72,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
             return;
         }else if (password.isEmpty() || password.trim().length() == 0){
             edtPassword.setError("Enter Password");
+        }else{
+            for( int i =0 ; i < Users.userArray.size() ; i++){
+                System.out.println("here");
+            }
         }
 
 

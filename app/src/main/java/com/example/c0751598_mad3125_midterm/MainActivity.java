@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -63,20 +64,31 @@ public class MainActivity extends AppCompatActivity {
 
     private void login()
     {
+
         String userName = edtUserName.getText().toString();
         String password = edtPassword.getText().toString();
-
+        int temp = 0;
         if(userName.isEmpty() || userName.trim().length() == 0)
         {
             edtUserName.setError("Enter Email ID");
             return;
-
         }else if (password.isEmpty() || password.trim().length() == 0){
             edtPassword.setError("Enter Password");
         }else{
             for( int i =0 ; i < Users.userArray.size() ; i++){
-                System.out.println("here");
+               if (Users.userArray.get(i).Email.equals(userName) && Users.userArray.get(i).Password.equals(password)){
+                   Intent mIntent = new Intent(MainActivity.this, HomeActivity.class);
+                   startActivity(mIntent);
+                   finish();
+               }else{
+                    temp = temp+1;
+               }
             }
+
+            if(temp == Users.userArray.size()){
+                Toast.makeText(getApplicationContext(),"UserName or Password is wrong",Toast.LENGTH_SHORT).show();
+            }
+
         }
 
 

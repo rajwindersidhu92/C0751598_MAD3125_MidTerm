@@ -3,7 +3,7 @@ package com.example.c0751598_mad3125_midterm;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Launch implements Serializable {
+public class Launch {
 
     private String launch_Name;
     private String launch_Year;

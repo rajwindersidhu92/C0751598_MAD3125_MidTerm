@@ -1,5 +1,7 @@
 package com.example.c0751598_mad3125_midterm;
 
+import java.io.Serializable;
+
 public class Rocket {
 
     private String rocket_id;

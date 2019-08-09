@@ -37,7 +37,7 @@ public class LaunchAdapter extends RecyclerView.Adapter<LaunchAdapter.ViewHolder
                 @Override
                 public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), LaunchDetailActivity.class);
-                intent.putExtra("LaunchDetails",launchlist);
+
                 view.getContext().startActivity(intent);
                 }
             });

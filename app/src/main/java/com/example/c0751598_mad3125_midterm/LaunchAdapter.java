@@ -37,6 +37,13 @@ public class LaunchAdapter extends RecyclerView.Adapter<LaunchAdapter.ViewHolder
                 @Override
                 public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), LaunchDetailActivity.class);
+                intent.putExtra("launch_name" , launchlist.getLaunch_Name());
+                intent.putExtra("launch_year" , launchlist.getLaunch_Year());
+                intent.putExtra("rocket_id" , launchlist.getRocket().getRocket_id());
+                intent.putExtra("rocket_name" , launchlist.getRocket().getRocket_name());
+                intent.putExtra("rocket_type" , launchlist.getRocket().getRocket_type());
+                intent.putExtra("image" , launchlist.getLinks().mission_patch);
+                intent.putExtra("wiki" , launchlist.getLinks().wikipedia);
 
                 view.getContext().startActivity(intent);
                 }

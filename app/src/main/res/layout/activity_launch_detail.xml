@@ -77,26 +77,46 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="51dp"
         android:layout_marginTop="27dp"
-        android:text="Rocket Name" />
+        android:text="Rocket ID" />
 
     <TextView
-        android:id="@+id/rocket_name"
+        android:id="@+id/rocket_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/launch_year"
-        android:layout_marginStart="49dp"
+        android:layout_marginStart="71dp"
         android:layout_marginTop="27dp"
         android:layout_toEndOf="@+id/textView10"
         android:text="TextView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_web"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginStart="13dp"
         android:layout_marginTop="223dp"
         android:layout_toEndOf="@+id/textView"
-        android:text="Button" />
+        android:text="View on web" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Rocket Name" />
+
+    <TextView
+        android:id="@+id/rocket_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rocket_id"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="TextView" />
 
 </RelativeLayout>

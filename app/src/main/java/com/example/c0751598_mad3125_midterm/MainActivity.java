@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         {
             edtUserName.setError("Enter Email ID");
             return;
+
         }else if (password.isEmpty() || password.trim().length() == 0){
             edtPassword.setError("Enter Password");
         }else{

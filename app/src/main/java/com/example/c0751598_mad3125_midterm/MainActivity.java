@@ -2,8 +2,10 @@ package com.example.c0751598_mad3125_midterm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -37,9 +39,61 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initView();
 
+        btnLogin.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                login();
+            }
+        });
 
     }
 
+
+    private void initView()
+    {
+        edtUserName = (EditText)findViewById(R.id.edtUserName);
+        edtPassword = (EditText)findViewById(R.id.edtPassword);
+        btnLogin = (Button)findViewById(R.id.btnLogin);
+    }
+
+
+    private void login()
+    {
+        String userName = edtUserName.getText().toString();
+        String password = edtPassword.getText().toString();
+
+        if(userName.isEmpty() || userName.trim().length() == 0)
+        {
+            edtUserName.setError("Enter Email ID");
+            return;
+        }else if (password.isEmpty() || password.trim().length() == 0){
+            edtPassword.setError("Enter Password");
+        }
+
+
+
+
+//        if(userName.equals("a") && password.equals("pwd"))
+//        {
+//            Intent mIntent = new Intent(LoginActivity.this, HomeActivity.class);
+//            mIntent.putExtra("name", "Pritesh Patel");
+//            mIntent.putExtra("id", 100);
+
+            //Bundle mBundle = new Bundle();
+            //mBundle.putInt("id", 100);
+            //mBundle.putString("name", "Pritesh Patel");
+            //mIntent.putExtra("all", mBundle);
+
+//            startActivity(mIntent);
+            //finish();
+//        }
+
+        //Toast.makeText(getApplicationContext(),userName + " : " +  password,Toast.LENGTH_SHORT).show();
+
+    }
 
 }

@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
+
         Users u1 = new Users("raj@gmail.com" ,"123456");
         Users u2 = new Users("neeraj@gmail.com" ,"123456");
         Users u3 = new Users("uday@gmail.com" ,"123456");
@@ -31,12 +32,14 @@ public class MainActivity extends AppCompatActivity {
         Users.userArray.add(u2);
         Users.userArray.add(u3);
         Users.userArray.add(u4);
+        Users.userArray.add(u5);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
+
     }
 
-    
+
 }
